@@ -1,4 +1,46 @@
 # Multi-Agent-Translator
+## Running the Application
+
+Start the FastAPI server using:
+
+```bash
+python run.py
+```
+
+Once the server is running, the API will be available at:
+
+```text
+http://127.0.0.1:8080
+```
+
+### API Documentation
+
+Swagger UI:
+
+```text
+http://127.0.0.1:8080/docs
+```
+
+ReDoc:
+
+```text
+http://127.0.0.1:8080/redoc
+```
+
+### Health Check
+
+```bash
+curl http://127.0.0.1:8080/
+```
+
+Expected response:
+
+```json
+{
+  "message": "Multi-Agent Translator Running"
+}
+```
+
 ## Example Request
 
 Send a POST request to the `/translate` endpoint with the following JSON payload:
